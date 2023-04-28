@@ -1,0 +1,364 @@
+body {
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    background-attachment: fixed;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.logo {
+    width: 350px;
+    height: 100px;
+    /* border: 2px solid red; */
+}
+
+.logo img {
+    /* margin-top: 20px; */
+    width: 100%;
+    /* margin-top :100px; */
+}
+
+
+.login {
+    /* display: flex; */
+    height: 650px;
+    width: 420px;
+    justify-content: center;
+    border-radius: 25px;
+    align-items: center;
+    /* font-size: 20px; */
+    font-weight: 600;
+    /* overflow-y: scroll; */
+    /* text-align: center; */
+    /* margin-top: 25px; */
+     /* border: 2px solid red; */
+     padding: 30px;
+     /* padding-right: 27px; */
+     /* background: #FFFFFF; */
+     
+
+}
+
+.login ::-webkit-scrollbar {
+    display: none;
+}
+
+
+.logPage {
+    /* display: flex; */
+    /* display: block; */
+    background: #FFFFFF;
+    border-radius: 20px;
+    height: 610px;
+    /* border: 1px solid red; */
+    width: 400px;
+    /* overflow: hidden; */
+    /* overflow-y: scroll; */
+
+
+    /* font-size: 16px; */
+    font-weight: 600;
+    padding: 30px;
+    padding-top: 10px;
+    overflow-y: scroll;
+
+    
+
+}
+
+
+.card-title {
+    /* margin-top: px; */
+    /* margin-left: 30px; */
+    /* font-weight: bolder; */
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+.step2{
+    border-bottom: 2px solid rgba(56, 108, 181, 1);
+    width: 46%;
+    height: 45px;
+    border-radius: 2px;
+    border-width: 4px;
+    font-weight: normal;
+
+
+    /* box-sizing: border-box; */
+    /* flex-direction: column; */
+    /* margin-right: 15px; */
+
+    
+}
+.step1 p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+
+}
+.step1 {
+    border-width: 4px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.16);
+    width: 46%;
+    height: 45px;
+    border-radius: 2px;
+    margin-right: 4px;
+    border-width: 4px;
+    border-radius: 2px;
+    font-weight: normal;
+    /* margin-right: 10px; */
+    /* flex-direction: column; */
+    
+    
+}
+.step2 p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+.emailbox {
+    display: flex;
+    width: 390px;
+    height: 53px;
+    background: #F7FAFF 0% 0% no-repeat padding-box;
+    border: 1px solid #DDDDDD;
+    padding-left: 6px;
+    border-radius: 6px;
+    /* margin-left: 30px; */
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0px;
+    opacity: 1;
+    margin-bottom: 16px;
+    
+}
+
+
+
+.inputbox {
+    /* width: 420px;
+   height: 60px; */
+   width: fit-content;
+   height: 53px;
+   background: #f7faff 0% 0% no-repeat padding-box;
+   /* border: 1px solid #dddddd; */
+   /* border-radius: 6px; */
+   opacity: 1;
+   position: relative;
+   /* border: 1px solid red; */
+   padding-left: 13px;
+
+}
+
+
+.inputbox input {
+    width: 350px;
+    background: #f7faff;
+    outline: none;
+    border: none;
+    
+    height: 39px;
+    /* width: 300px; */
+    /* padding: 12px; */
+    font-size: 15px;
+    padding-top: 12px;
+    /* margin-top: 5px; */
+    color: #777777;
+ }
+
+ 
+.inputbox label {
+    position: absolute;
+    top: 4px;
+    left: 0%;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 16px;
+    transition: 300ms;
+    color: #222222;
+    font-weight: normal;
+ }
+ 
+ .inputbox input:focus ~ label {
+     top: -10px;
+     left: 0px;
+     font-size: 14px;
+     color:#222222;
+     opacity: 40%;
+     margin-left: 3px;
+     /* padding: 2px; */
+  }
+ 
+ /* .email input::placeholder {
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #000000BF;
+ } */
+ 
+ .inputbox input:focus {
+     /* padding-left: 6px; */
+    border-bottom: 2px solid #386CB5;
+    /* border-radius: 6px; */
+ }
+
+
+ .inputbox input:not(focus):valid ~ label{
+    top: -10px;
+    font-size: 14px;
+    color:#222222;
+    opacity: 40%;
+    margin-left: 3px;
+    
+
+    
+}
+
+#checkbox {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#checkbox:checked {
+    border: none;
+    background-image: url("images/checkmark.svg");
+    object-fit: cover;
+    color: white;
+}
+.agreement {
+    padding-top: 6px;
+}
+.remember {
+    color: #00000080;
+    font-weight: normal;
+
+}
+
+.register1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* width: 395px; */
+}
+.stepback{
+    align-items: center;
+    /* margin-top: 40px; */
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.createacc {
+    display: flex;
+    background: transparent linear-gradient(270deg, #386CB5 0%, #669FED 100%) 0% 0% no-repeat padding-box;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    align-items: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 10px;
+    /* padding-top: 0px; */
+    font-weight: 600;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 47px;
+    width: 150px;
+}
+
+.createacc:disabled {
+    opacity: 0.5;
+}
+
+.credpara2 {
+    display: block;
+    letter-spacing: 0px;
+    color: #000;
+    /* margin-top: 12px; */
+    text-align: display ;
+    font-weight: 600;
+    margin-top: 0px;
+    font-size: 14px;
+
+}
+.credpara1 {
+    display: block;
+    letter-spacing: 0px;
+    color: #000000BF;
+    /* margin-top: 12px; */
+    justify-content: center;
+    /* font-weight: 600; */
+    font-size: 14px;
+    margin-bottom: 0px;
+
+
+}
+.credpara{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    text-align: center;
+    
+
+}
+.register {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 30px; */
+    /* width: 395px; */
+    justify-items: center;
+}
+
+
+
+.errormsg {
+    display: block;
+    color: #FF0000;
+    font-size: 12px;
+    font-weight: normal;
+
+    
+}
+
+
+
+@media (max-width: 1000px) {
+    .main {
+        /* border: 1px solid red; */
+        display: flex;
+        /* flex-direction: column; */
+    }
+}
